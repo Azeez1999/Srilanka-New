@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login and Register Form</title>
+    <link rel="stylesheet" href="CSS File/Login & Register.css">
+    <link rel="stylesheet" href="../Srilanka/CSS File/style.css">
+</head>
+<body>
+
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>CLOUD 4 TRAVEL</span></a>
+
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">HOME</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">BOOKING
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Hotel Book.html">HOTEL</a>
+                    <a href="Transport.html">TRANSPORT</a>
+                    <a href="Photograper.html">PHOTOGRAPHER</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">PLACE
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="north centrl.html">NORTH CENTRAL</a>
+                    <a href="north western.html">NORTH WESTERN</a>
+                    <a href="Northern.html">NORTHERN</a>
+                    <a href="sabragamuwa.html">SABRAGAMUWA</a>
+                    <a href="uva.html">UVA</a>
+                    <a href="western .html">WESTERN</a>
+                    <a href="sourthrn.html">SOUTHERN</a>
+                    <a href="central.html">CENTRAL</a>
+                    <a href="easterrn.html">EASTERN</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">EMERGENCY
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Gethlp.html">GET HELP</a>
+                    <a href="hlth care.html">HEALTHCARE</a>
+                </div>
+            </div>
+
+            <a href="Payment.html">PAYMENT</a>
+            <a href="Feed Back.html">FEEDBACK</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/logo-removebg.png" alt="logo">
+            </div>
+
+            <form action="process.php" method="post" id="login" class="input-group">
+                <input type="text" class="input-field" name="login_email" placeholder="Email Address">
+                <input type="password" class="input-field" name="login_password" placeholder="Enter the Password">
+                <input type="checkbox" class="chech-box"><span>Forget Password?</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <form action="process.php" method="post" id="register" class="input-group">
+                <input type="text" class="input-field" name="full_name" placeholder="Full Name" required>
+                <input type="text" class="input-field" name="register_email" placeholder="E-mail" required>
+                <input type="text" class="input-field" name="phone_no" placeholder="Phone No" required>
+                <input type="password" class="input-field" name="register_password" placeholder="Password" required>
+                <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-100%";
+            y.style.left = "0";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "0";
+            y.style.left = "100%";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+
+</html>
