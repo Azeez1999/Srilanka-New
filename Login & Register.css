@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Add responsive styles for the navigation bar */
+@media screen and (max-width: 768px) {
+  .topnav {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .topnav a {
+      padding: 10px;
+      display: block;
+  }
+
+  .dropdown-content {
+      display: none;
+      flex-direction: column;
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://cdn.wallpapersafari.com/76/40/4adm7i.jpg);
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 15px;
+  overflow: hidden;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+.button-box {
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  width: 48%;
+  padding: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 85px;
+  margin: 0 12px;
+}
+
+.input-group {
+  top: 180px;
+  position: relative;
+  width: 100%;
+  transform: .5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.chech-box {
+  margin: 15px 10px;
+}
+
+span {
+  color: #777;
+  font-size: 12px;
+  bottom: 15px;
+  position: relative;
+}
+
+#login {
+  left: 0;
+}
+
+#register {
+  left: 100%;
+}
